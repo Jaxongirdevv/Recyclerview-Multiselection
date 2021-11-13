@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvcounter"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="0 item selected"></TextView>
+            <ImageView
+                android:id="@+id/ivdelete"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:background="@drawable/ic_baseline_delete_forever_24"
+                android:layout_height="30dp"></ImageView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview1"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>
